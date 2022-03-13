@@ -6,6 +6,7 @@
     
   }
   
+  /*Body*/
   body {
     background: linear-gradient(
       90deg,
@@ -29,6 +30,7 @@
 
   }
   
+    /*Titulo*/
   h1 {
     text-align: center;
     margin: 32px 0;
@@ -45,6 +47,7 @@
     margin-bottom: 32px;
     justify-content: center;
   }
+  
   
   .todo-input {
     
@@ -65,6 +68,7 @@
     font-size: 17px;
   }
   
+    /*Boton agregar*/
   .todo-button {
     padding: 16px;
     border: none;
@@ -79,11 +83,14 @@
     color: #fff;
     text-transform: capitalize;
   }
-  
+
+    /*Barra de editar*/
   .todo-input.edit {
     border: 2px solid #36d1dc;
   }
   
+
+    /*Boton Actualizar*/
   .todo-button.edit {
     background: linear-gradient(
       90deg,
@@ -100,7 +107,7 @@
     justify-content: center ;
   }
   
-
+  /*Filas agregadas*/
   .todo-row {
     display: flex;
     justify-content: space-between;
@@ -119,30 +126,7 @@
     width: 40%;
   }
   
-  .todo-row:nth-child(4n + 1) {
-    background: linear-gradient(
-      90deg,
-      #87c0ca 0%,
-      #4ca1af 100%
-    );
-  }
-  
-  .todo-row:nth-child(4n + 2) {
-    background: linear-gradient(
-      90deg,
-      #87c0ca 0%,
-      #4ca1af 100%
-    );
-  }
-  
-  .todo-row:nth-child(4n + 3) {
-    background: linear-gradient(
-      90deg,
-      #87c0ca 0%,
-    #4ca1af 100%
-    );
-  }
-  
+  /*Iconos*/
   .icons {
     display: flex;
     align-items: center;
@@ -150,11 +134,13 @@
     cursor: pointer;
   }
   
+  /*Boton borrar*/
   .delete-icon {
     margin-right: 5px;
     color: rgb(168, 35, 35);
   }
   
+  /*Boton Editar*/
   .edit-icon {
     color: rgb(85, 216, 52);
   }

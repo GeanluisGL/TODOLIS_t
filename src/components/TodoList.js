@@ -1,12 +1,16 @@
+//Importar los archivos a usar
 import React, {useState} from 'react';
 import Todo from './Todo';
 import TodoForm from './TodoForm';
 
+//Funcion que realiza las listas
 function TodoList() {
   const [todos, setTodos] = useState([]);
 
+  //Agrega por medio de un todo
 const addTodo = todo => {
    
+  //Por medio de este 'if' podemos evitar que se inserten filas sin contenido
   if (!todo.text || /^\s*$/.test(todo.text)){
     return;
   }
@@ -17,6 +21,7 @@ const addTodo = todo => {
   }
 
 
+  //Por medio de este 'if' podemos evitar que cuando se actualicen las filas estas entren sin contenido
   const updateTodo = (todoId, newValue) => {
     if (!newValue.text || /^\s*$/.test(newValue.text)){
       return;
@@ -25,7 +30,9 @@ const addTodo = todo => {
     setTodos(prev => prev.map(item => (item.id === todoId ? newValue : item)));
   }
 
+  //Funcion que elimina las filas
   const removeTodo = id => {
+    //Tomara el Id y en el filtrara el Id que sea clickeado en la fila
     const removeArr = [...todos].filter(todo => todo.id !== id)
     setTodos(removeArr);
   }
