@@ -44,6 +44,7 @@ setTodos(updateTodo);
 
   return (
     <div>
+      <title>To do List</title>
       <h1>¿Qué haremos hoy?</h1>
       <TodoForm onSubmit={addTodo}/>
       <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo}/>
