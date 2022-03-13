@@ -1,20 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import TodoList from './components/TodoList';
+
 
 function App() {
   return (
-    <div className="App">
-   <h1>AAAAAAAAAA</h1>  
+    <div className='To do List'>
+     <TodoList />
      </div>
   );
 }
 
-/*
-For create a 
-1- git init 
-2- git status
-3- git add .
-4- git commit -m "init 1"
 
-*/
+
 export default App;
