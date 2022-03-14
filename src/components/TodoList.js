@@ -10,8 +10,8 @@ function TodoList() {
   //Agrega por medio de un todo
 const addTodo = todo => {
    
-  //Por medio de este 'if' podemos evitar que se inserten filas sin contenido
-  if (!todo.text || /^\s*$/.test(todo.text)){
+  //Por medio de este 'if' podemos evitar que se inserten filas sin contenido (Simbolos)
+  if (!todo.text || /*Or*/ /^\s*$/.test(todo.text)){
     return;
   }
 
@@ -20,9 +20,9 @@ const addTodo = todo => {
   setTodos(newTodos)
   }
 
-
-  //Por medio de este 'if' podemos evitar que cuando se actualicen las filas estas entren sin contenido
+  //Actualizacion funcion
   const updateTodo = (todoId, newValue) => {
+    //Por medio de este 'if' podemos evitar que cuando se actualicen las filas estas entren sin contenido
     if (!newValue.text || /^\s*$/.test(newValue.text)){
       return;
     }
