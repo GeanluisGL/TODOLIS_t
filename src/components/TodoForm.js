@@ -8,15 +8,17 @@ function TodoForm(props) {
 //Aqui la constante usa la variable input en la funcion de "setInput"
 const [input, setInput] = useState(props.edit ? props.edit.value : '')
 
-
+//Guarda la variable (Id) 
 const inputRef = useRef(null)
 
+//Ejecuta la opcion sobre el "objeto" seleccionado
 useEffect(() => {
   inputRef.current.focus()
+  console.log("Hola")
 })
 
 //Constante que guarda la funcion que permite que se agregen valores en a la barra de texto para agregar
-const handleChange = e => {
+const handleChange = e => {   
    setInput(e.target.value)
 };
 

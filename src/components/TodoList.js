@@ -38,7 +38,7 @@ const addTodo = todo => {
   }
 
 
-
+//Funcion que marca el realizado
 const completeTodo = id => {
   let updateTodo = todos.map(todo => {
     if (todo.id === id){
@@ -53,7 +53,7 @@ setTodos(updateTodo);
     <div>
       <title>To do List</title>
       <h1>¿Qué haremos hoy?</h1>
-      <TodoForm onSubmit={addTodo}/>
+      <TodoForm onSubmit={addTodo /*Llama la funcion*/}/>
       <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo}/>
       </div>
   );

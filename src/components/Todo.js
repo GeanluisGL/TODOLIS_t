@@ -10,6 +10,7 @@ const[edit, setEdit] = useState({
   value: ''
 })
 
+//Actualiza
 const submitUpdate = value => {updateTodo(edit.id, value);
   setEdit({
     id: null,
@@ -36,7 +37,8 @@ if (edit.id ) {
       onClick={() => removeTodo(todo.id)}
       className='delete-icon'
       />
-      <AiFillEdit onClick={() => setEdit({id: todo.id, value:todo.text})}
+      <AiFillEdit 
+      onClick={() => setEdit({id: todo.id, value:todo.text})}
       className='edit-icon' />
       </div>
 
